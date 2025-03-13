@@ -1,12 +1,49 @@
-# React + Vite
+## Descripcion
+React To-Do es una aplicación web desarrollada con React que permite a los usuarios gestionar sus tareas diarias de manera eficiente. La aplicación ofrece funcionalidades para agregar, editar y eliminar tareas, así como para marcar tareas como completadas. Además, incluye un sistema de autenticación para que los usuarios puedan iniciar sesión y registrar nuevas cuentas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Agregar Tareas:** Los usuarios pueden agregar nuevas tareas a su lista.
+- **Editar Tareas:**Los usuarios pueden editar las tareas existentes.
+- **Eliminar Tareas:** Los usuarios pueden eliminar tareas que ya no son necesarias.
+- **Marcar Tareas Completadas:** Los usuarios pueden marcar las tareas como completadas.
+- **Autenticación de Usuarios:** Los usuarios pueden registrarse e iniciar sesión para acceder a sus tareas personales.
+- **Interfaz Intuitiva:** La aplicación cuenta con una interfaz de usuario intuitiva y fácil de usar.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** Biblioteca de JavaScript para construir interfaces de usuario.
+- **React Router:** Biblioteca para manejar la navegación en la aplicación.
+- **Bootstrap:** Framework CSS para diseñar una interfaz de usuario responsiva.
+- **SweetAlert2:** Biblioteca para mostrar alertas personalizadas.
+- **Node.js y Express:** Backend para manejar las solicitudes de la API.
+
+## Instalación
+
+1. Clona el repositorio:
+   
+   git clone https://github.com/Arielcortes22/react-to-do.git
+
+   Navega al directorio del proyecto:
+   cd 
+   ' /.react to do'
+
+Instala las dependencias:
+npm i
+
+Inicia la aplicación:
+npm run dev
+
+
+
+
+## Uso
+
+Abre tu navegador y navega a http://localhost:5173/Login
+Regístrate o inicia sesión con tu cuenta.
+Comienza a agregar, editar y eliminar tus tareas.
+
+
+
+
