@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import { Link, useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import llamados from '../services/llamados';
+import Swal from 'sweetalert2'
 
 
 function FormLogin() {
@@ -50,35 +51,30 @@ function FormLogin() {
     
   }
 
-  function validar() {
+  async function validar() {
+    const encontrado = usuarios.find(usuario => usuario.nombre === nombreUsuario && usuario.password === passwordUsuario);
 
-
-    console.log(nombreUsuario,passwordUsuario);
-    console.log(usuarios);
-
-
-    const encontrado = usuarios.filter(usuario => usuario.nombre===nombreUsuario && usuario.password=== passwordUsuario)
-     
-  
-    if (encontrado.length === 0) {
-        console.log("Usuario o contrasena incorrectos");
-      
-    }else{
-  
-
-      navigate('/Pag')
-      
+    if (!encontrado) {
+      console.log("Usuario o contraseña incorrectos");
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Usuario o contraseña incorrectos',
+      });
+    } else {
+      await Swal.fire({
+        title: 'Inicio de sesión exitoso',
+        text: 'Redirigiendo...',
+        icon: 'success',
+        timer: 1500,
+        showConfirmButton: false,
+        willClose: () => {
+          navigate('/Pag');
+        }
+      });
     }
-    
-    
-   
-    
-
-    
-    
-
-    
   }
+
 
 
   
@@ -98,7 +94,6 @@ function FormLogin() {
         <Form.Control value={passwordUsuario} onChange={password} type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Confirmar" />
       </Form.Group>
     <Button onClick={validar} variant="primary">
         Iniciar 

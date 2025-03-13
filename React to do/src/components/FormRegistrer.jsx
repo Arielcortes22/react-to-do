@@ -48,7 +48,6 @@ function Enviardatos() {
         <Form.Control value={passwordUsuario} onChange={Contraseña} type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Confirmar" />
       </Form.Group>
       <Link to="/Login"> <Button  onClick={Enviardatos} variant="primary">
         Registrarse
