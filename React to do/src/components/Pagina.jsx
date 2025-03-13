@@ -60,7 +60,7 @@ function Pagina() {
           {editando ? "Actualizar" : "Agregar"}
         </button>
       </div>
-      <div>
+      <div className='Tareas2'>
         <h2>Tareas</h2>
         <ul>
           {MostrarTareas.map((Tarea, index) => (

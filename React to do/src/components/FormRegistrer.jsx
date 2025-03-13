@@ -50,9 +50,10 @@ function Enviardatos() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Confirmar" />
       </Form.Group>
-      <Button onClick={Enviardatos} variant="primary">
+      <Link to="/Login"> <Button  onClick={Enviardatos} variant="primary">
         Registrarse
       </Button>
+      </Link>
       </div>
 
     </div>
