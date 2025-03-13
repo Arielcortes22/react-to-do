@@ -41,9 +41,9 @@ async function PostTareas(Tareas) {
     }
 }
 
-async function UpdateTareas(Tareas, id) {
+async function UpdateTareas(id, Tareas) {
     try {
-        const userData = {Tareas, id };
+        const userData = { Tareas };
 
         const response = await fetch(`http://localhost:3000/Tareas/${id}`, {
             method: 'PUT',
